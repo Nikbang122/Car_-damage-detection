@@ -1,0 +1,25 @@
+{%extends 'base.html'%}
+
+{%block head%}
+{%endblock%}
+
+{%block body%}
+<div class="data">
+
+  <table>
+    <tr>
+      <th>Car</th>
+      <th>Status</th>
+    </tr>
+
+{%for car in cars%}
+    <tr>
+      <td><img src={{car.image}} alt=""></td>
+      <td>{{car.status}}</td>
+    </tr>
+
+{%endfor%}
+  </table>
+
+</div>
+{%endblock%}
